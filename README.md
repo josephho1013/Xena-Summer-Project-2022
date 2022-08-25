@@ -1,6 +1,6 @@
 # Xena-Summer-Project-2022
 
-This is a repository of Lean codes of my UROP and/or Xena Project under supervision of Prof. Kevin Buzzard in summer 2022. Using Lean 3, a proof assistant, I explored the topic of binary relations, including predicates, operations and compositions.
+This is a repository of Lean codes of my UROP and/or Xena Project under supervision of Prof. Kevin Buzzard in summer 2022. Using Lean 3, a proof assistant, I explored the topic of binary relations, including predicates, operations and compositions. Several elementary problems were also formalized here, some inspired by past examinations of M1F (Foundations of Analysis) and IUM (Introduction to University Mathematics) modules, others adapted from the book *Relational Mathematics* by Gunther Schmidt, in which most of the definitions used are sourced.
 
 
 ## References:
