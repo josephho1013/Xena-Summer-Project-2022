@@ -125,7 +125,8 @@ end
 namespace composition_relations
 /-
 Define composition of relations (analogous to friend of a friend):
-For relations R,S on set A, the composition `R ∘ S` is the relation that, for a,b ∈ A, (R ∘ S)(a,b) is the proposition that `∃ (y : A), R a y ∧ S y b`.
+For relations R,S on set A, the composition `R ∘ S` is the relation that, for a,b ∈ A, 
+(R ∘ S)(a,b) is the proposition that `∃ (y : A), R a y ∧ S y b`.
 
 If R = S, we write the composition as R₂.
 -/
@@ -210,12 +211,13 @@ namespace relations_2
 
 /- Schröder's rule
 For binary relations (a : A → B → Prop) (b : B → C → Prop) (c : A → C → Prop), the following are equivalent:
-1)  A ∘ B ⊆ C
-2)  A.transpose ∘ C.complement ⊆ B.complement
-3)  C.complement ∘ B.transpose ⊆ A.complement
+1)  a ∘ b ⊆ c
+2)  a.transpose ∘ c.complement ⊆ b.complement
+3)  c.complement ∘ b.transpose ⊆ a.complement
 -/
 
-theorem schroder_rule_1 (a : A → B → Prop) (b : B → C → Prop) (c : A → C → Prop) : (∀ (x : A) (z : C), relation.comp a b x z → c x z) ↔ (∀ (y : B) (z : C), relation.comp (transpose a) (complement c) y z → complement b y z) :=
+theorem schroder_rule_1 (a : A → B → Prop) (b : B → C → Prop) (c : A → C → Prop) : 
+(∀ (x : A) (z : C), relation.comp a b x z → c x z) ↔ (∀ (y : B) (z : C), relation.comp (transpose a) (complement c) y z → complement b y z) :=
 begin
   split,
   { intro h,
